@@ -1,4 +1,4 @@
-package com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics;
+package com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.data;
 
 import org.springframework.stereotype.Repository;
 

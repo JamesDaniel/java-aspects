@@ -1,5 +1,6 @@
 package com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics;
 
+import com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.data.Dao2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

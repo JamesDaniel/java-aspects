@@ -24,7 +24,7 @@ public class BusinessAopSpringBootTest {
 
     @Test
     public void invokeAOPStuff() {
-        logger.info(business1.calculateSomething());
+        logger.info(business1.calculateSomething("simple message", 12, 12));
         logger.info(business2.calculateSomething());
     }
 }

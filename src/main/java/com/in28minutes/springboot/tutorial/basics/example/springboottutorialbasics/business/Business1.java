@@ -16,7 +16,7 @@ public class Business1 {
     private Dao1 dao1;
 
     @TrackTime
-    public String calculateSomething(){
+    public String calculateSomething(String message, int num1, int num2){
         String value = dao1.retrieveSomething();
         logger.info("In Business - {}", value);
         return value;

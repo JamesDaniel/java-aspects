@@ -15,8 +15,8 @@ public class MethodExecutionCalculationAspect {
 
     private Logger logger = LoggerFactory.getLogger(MethodExecutionCalculationAspect.class);
 
-    @Around("@annotation(com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.aspects.TrackTime)")
-    public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
+    @Around(value = "@annotation(com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.aspects.TrackTime) && @annotation(trackTime)")
+    public Object around(ProceedingJoinPoint joinPoint, TrackTime trackTime) throws Throwable {
         Object result;
 
         long startTime = System.currentTimeMillis();
@@ -35,6 +35,9 @@ public class MethodExecutionCalculationAspect {
         Signature signature =  joinPoint.getSignature();
         Class returnType = ((MethodSignature) signature).getReturnType();
         logger.info("Return type: " + returnType.getName());
+
+        logger.info("Tag from annotation: " + trackTime.tag());
+        logger.info("Action from annotation: " + trackTime.action());
 
         return result;
     }

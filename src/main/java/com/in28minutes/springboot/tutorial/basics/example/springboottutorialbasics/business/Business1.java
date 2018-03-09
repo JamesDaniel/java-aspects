@@ -15,7 +15,7 @@ public class Business1 {
     @Autowired
     private Dao1 dao1;
 
-    @TrackTime
+    @TrackTime(tag = "simpleTag", action = "simpleAction")
     public String calculateSomething(String message, int num1, int num2){
         String value = dao1.retrieveSomething();
         logger.info("In Business - {}", value);

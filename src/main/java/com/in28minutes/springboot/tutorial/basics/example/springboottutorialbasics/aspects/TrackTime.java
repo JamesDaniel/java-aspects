@@ -9,4 +9,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface TrackTime {
 
+    String tag() default "unspecified tag";
+    String action() default "unspecified action";
 }

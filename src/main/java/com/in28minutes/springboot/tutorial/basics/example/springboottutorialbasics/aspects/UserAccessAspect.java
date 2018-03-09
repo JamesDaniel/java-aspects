@@ -19,7 +19,7 @@ public class UserAccessAspect {
     //Weaving & Weaver
     // The Pointcut is execution(* com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.data.*.*(..)),
     // which defines when a call to a method should be intercepted.
-    @Before("execution(* com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.data.*.*(..))")
+    @Before("com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.aspects.CommonJoinPointConfig.dataLayerExecution()")
     public void before(JoinPoint joinPoint){
         // The JoinPoint is a specific execution instance of an Advice. When code is executed and Pointcut  is met, the
         // Advice is executed.

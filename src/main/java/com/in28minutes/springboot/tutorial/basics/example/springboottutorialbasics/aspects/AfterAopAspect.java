@@ -14,13 +14,13 @@ public class AfterAopAspect {
 
     private Logger logger = LoggerFactory.getLogger(AfterAopAspect.class);
 
-    @AfterReturning(value = "execution(* com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.business.*.*(..))",
+    @AfterReturning(value = "com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.aspects.CommonJoinPointConfig.businessLayerExecution()",
             returning = "result")
     public void afterReturning(JoinPoint joinPoint, Object result) {
         logger.info("{} returned with value {}", joinPoint, result);
     }
 
-    @After(value = "execution(* com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.business.*.*(..))")
+    @After(value = "com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.aspects.CommonJoinPointConfig.businessLayerExecution()")
     public void after(JoinPoint joinPoint) {
         logger.info("after execution of {}", joinPoint);
     }

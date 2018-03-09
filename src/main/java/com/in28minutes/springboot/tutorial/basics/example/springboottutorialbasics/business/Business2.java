@@ -1,4 +1,4 @@
-package com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics;
+package com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.business;
 
 import com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.data.Dao2;
 import org.springframework.beans.factory.annotation.Autowired;

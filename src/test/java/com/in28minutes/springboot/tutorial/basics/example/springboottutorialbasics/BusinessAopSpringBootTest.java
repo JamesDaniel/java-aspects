@@ -1,5 +1,7 @@
 package com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics;
 
+import com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.business.Business1;
+import com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.business.Business2;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;

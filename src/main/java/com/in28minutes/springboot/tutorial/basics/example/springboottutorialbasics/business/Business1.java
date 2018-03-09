@@ -1,4 +1,4 @@
-package com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics;
+package com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.business;
 
 import com.in28minutes.springboot.tutorial.basics.example.springboottutorialbasics.data.Dao1;
 import org.slf4j.Logger;
